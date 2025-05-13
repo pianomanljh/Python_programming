@@ -1,6 +1,6 @@
 def serch_product(dic, key):
     if key not in dic:
-        print(f'장박니에 {key}은(는) 없습니다.')
+        print(f'장바구니에 {key}은(는) 없습니다.')
     else:
         print(f'{key}은(는) {dic[key]}개 담겨 있습니다.')
 
