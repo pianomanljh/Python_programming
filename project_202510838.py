@@ -149,7 +149,7 @@ class ReactionTime:
             for j in range(0,i,1):
                 a = self.score_list[j].find(':')+1
                 b = self.score_list[j+1].find(':')+1
-                if float(self.score_list[j][a:-2]) > float(self.score_list[j+1][b:-2]):
+                if float(self.score_list[j][a:-1]) > float(self.score_list[j+1][b:-1]):
                     self.score_list[j], self.score_list[j+1] = self.score_list[j+1], self.score_list[j]
 
     def show_scores(self):
@@ -176,3 +176,4 @@ class ReactionTime:
 
 game_test = ReactionTime()
 game_test.win.mainloop()
+
